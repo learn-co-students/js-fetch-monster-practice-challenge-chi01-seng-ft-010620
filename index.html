@@ -2,14 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Monstr</title>
-    <!-- <script src='js/index.js'></script> -->
-    <script src='js/demo.js'></script>
+    <title>Monsters INC</title>
+    <script defer src='js/index.js'></script>
+    <!-- <script defer src='js/demo.js'></script> -->
   </head>
   <body>
-    <h1>Monstr Inc.</h1>
-    <div id='create-monster'></div>
-    <div id='monster-container'></div>
+    <h1>Monsters Inc.</h1>
+    <div id='create-monster'>
+      <form class="add-monster" action="index.html" method="post">
+        <input type="text" name="name" placeholder="Cerberus" value="">
+        <input type="text" name="age" placeholder="600" value="">
+        <input type="text" name="description" placeholder="A three-headed Dog" value="">
+        <input type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+    <div id='monster-container'>
+      <!-- <div class="monster-card" data-id="Monster-id">
+        <h1 class ="monster-name">Name</h1>
+        <h2 class="monster-age">Age</h2>
+        <p class="monster-description">Description</p>
+      </div> -->
+    </div>
     <button id="back"><=</button>
     <button id="forward">=></button>
   </body>
